@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakenladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+
+        <ImageView fitWidth="500" fitHeight="500" layoutX="300"  >
+            <image>
+                <Image url="@gameboard.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitWidth="20" fitHeight="50" layoutX="50" layoutY="300">
+            <image>
+                <Image url="@player1.png"/>
+            </image>
+        </ImageView>
+        <Text layoutY="320" layoutX="80">Player 1</Text>
+        <Text layoutY="400" layoutX="80">Player 2</Text>
+        <ImageView fitWidth="20" fitHeight="50" layoutX="50" layoutY="380">
+        <image>
+            <Image url="@player2.png"/>
+        </image>
+        </ImageView>
+
+
+        <ImageView fx:id="player1"  fitWidth="20" fitHeight="50" layoutX="250" layoutY="450">
+            <image>
+                <Image url="@player1.png"/>
+            </image>
+    </ImageView>
+        <ImageView  fx:id="player2" fitWidth="20" fitHeight="50" layoutX="280" layoutY="450">
+            <image>
+                <Image url="@player2.png"/>
+            </image>
+
+        </ImageView>
+        <ImageView fitWidth="90" fitHeight="90" layoutX="100" layoutY="200" onMouseClicked="#roll">
+            <image>
+                <Image url="@dice.jpg"/>
+            </image>
+        </ImageView>
+        <Text fx:id="ChangeTurn" layoutY="170" layoutX="110">Player1's Turn</Text>
+        <Text fx:id="number" layoutY="320" layoutX="140"></Text>
+
+
+
+
+
+    </children>
+</AnchorPane>
